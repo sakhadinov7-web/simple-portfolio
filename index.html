@@ -1,36 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramiz Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahadinov Ramiz</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0f0f0f;
+      color: #eee;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 50px 40px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #5b9cf6;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .role {
+      color: #5b9cf6;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .exp {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 28px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #2a2a2a;
+      margin-bottom: 24px;
+    }
+
+    .stack-title {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      background: #242424;
+      border: 1px solid #333;
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .link-btn:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+    .tg {
+      background: #2a9fd6;
+      color: #fff;
+    }
+
+    .gh {
+      background: #24292e;
+      color: #fff;
+      border: 1px solid #444;
+    }
+
+    .link-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Ramiz</h1>
-  <p>Frontend Developer</p>
-</header>
+<div class="card">
+  <div class="avatar">SR</div>
+  <div class="name">Sahadinov Ramiz</div>
+  <div class="role">Junior Dasturchi</div>
+  <div class="exp">2 yillik tajriba</div>
 
-<section>
-  <h2>About Me</h2>
-  <p>I create simple and fast websites using HTML and CSS.</p>
-</section>
+  <div class="divider"></div>
 
-<section>
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="card">Landing Page</div>
-    <div class="card">Weather App</div>
-    <div class="card">Todo List</div>
+  <div class="stack-title">Texnologiyalar</div>
+  <div class="stack">
+    <span class="badge">HTML</span>
+    <span class="badge">CSS</span>
+    <span class="badge">JavaScript</span>
+    <span class="badge">PHP</span>
   </div>
-</section>
 
-<footer>
-  <p>Contact: @sahadinov
-  </p>
-</footer>
+  <div class="links">
+    <a href="https://t.me/sahadinov" class="link-btn tg">
+      <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
+      Telegram
+    </a>
+    <a href="https://github.com/sakhadinov7-web" class="link-btn gh">
+      <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      GitHub
+    </a>
+  </div>
+</div>
 
 </body>
 </html>
